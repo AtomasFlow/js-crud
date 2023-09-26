@@ -1,0 +1,120 @@
+@use '../../lib/service.scss' as s;
+
+.edit {
+	margin: s.space(4);
+
+	&__block {
+		display: grid;
+		gap: s.space(10);
+	}
+
+	&__main-title {
+		font-size: s.fonts(subheading);
+		color: s.color(primary);
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		gap: s.space(5);
+		padding: s.space(4);
+		border-radius: s.space(3);
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	&__title {
+		font-size: s.fonts(normal);
+		font-weight: bold;
+	}
+
+	&__card-top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card-top-block {
+		display: grid;
+		gap: s.space(1);
+		&:not(:last-child) {
+			margin-right: s.space(3);
+		}
+	}
+
+	&__card-label {
+	}
+
+	&__card-input {
+		display: grid;
+		padding: s.space(1);
+		border-radius: s.space(1);
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			opacity: 0.7;
+			box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__card-description {
+		display: grid;
+		gap: s.space(1);
+	}
+
+	&__card-textarea {
+		resize: none;
+		width: 100%;
+		min-height: 40px;
+		max-height: auto;
+		padding: s.space(2);
+		border-radius: s.space(1);
+		resize: vertical;
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			opacity: 0.7;
+			box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__card-description-note {
+		font-size: s.fonts(x-small);
+		color: s.color(gray);
+	}
+
+	&__card-button {
+		display: flex;
+		gap: s.space(3);
+		justify-content: space-between;
+		
+	}
+
+	&__card-link-primary {
+		text-decoration: none;
+		color: #fff;
+		width: 100%;
+		min-width: min-content;
+		background-color: #333;
+		padding: s.space(2);
+		border-radius: s.space(1);
+		background-color: s.color(primary);
+		text-align: center;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&__card-link-red {
+		@extend .edit__card-link-primary;
+		background-color: red;
+	}
+}
+
+.focus {
+	&:focus {
+		outline: none;
+		border-color: #007bff; 
+		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	}
+}
+

@@ -20,11 +20,11 @@ app.engine(
     defaultLayout: 'default/index',
     layoutsDir: __dirname + '/src/layout/',
     partialsDir: {
-      dir: __dirname + '/src/component/',
-      rename: (filePath) => {
-        return `${filePath.split('/')[0]}`
-      },
-    },
+			dir: __dirname + '/src/component/',
+			templateName: (filePath) => {
+				return `${filePath.split('/')[0]}`;
+			},
+		},		
   }),
 )
 
