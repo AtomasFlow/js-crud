@@ -22,10 +22,10 @@ app.engine(
     partialsDir: {
       dir: __dirname + '/src/component/',
       templateName: (filePath) => {
-        return `${filePath.split('/')[0]}`
-      },
-    },
-  }),
+        return `${filePath.split('/')[0]}`;
+      },		
+  },
+}),
 )
 
 app.use(logger('dev'))
