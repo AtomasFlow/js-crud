@@ -63,9 +63,9 @@ router.get('/', function (req, res) {
 	const list = User.getList();
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('user-index', {
     // вказуємо назву папки контейнера, в якій знаходяться наші стилі
-    style: 'index',
+    style: 'user-index',
 
 		data: {
 			users: {
