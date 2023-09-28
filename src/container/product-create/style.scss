@@ -1,0 +1,102 @@
+@use '../../lib/service.scss' as s;
+
+.block-form {
+	display: grid;
+	gap: s.space(10);
+	margin: s.space(4);
+
+	h1 {
+		color: s.color(primary);
+		font-size: s.fonts(subheading);
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(5);
+	padding: s.space(4);
+	border-radius: s.space(3);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+	&__title {
+		font-size: s.fonts(normal);
+		font-weight: bold;
+	}
+
+	&__content {
+		display: grid;
+		gap: s.space(4);
+	}
+
+	&__field {
+		display: grid;
+		gap: s.space(4);
+		div {
+			&:not(:last-child) {
+				margin-right: s.space(3);
+			}
+		}
+	}
+
+	&__field-top {
+		display: flex;		
+		div {
+			display: grid;
+			gap: s.space(1);
+		}
+	}
+
+	&__field-button {
+		display: grid;
+		gap: s.space(1);
+		
+	}
+
+	&__input {
+		display: grid;
+		padding: s.space(1);
+		border-radius: s.space(1);
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			opacity: 0.7;
+			box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
+		}
+	}
+
+	&__label-description {
+		font-size: s.fonts(x-small);
+		color: s.color(gray);
+	}
+		
+	&__textarea {
+		width: 100%;
+		min-height: 40px;
+		max-height: auto;
+		padding: s.space(2);
+		border-radius: s.space(1);
+		resize: vertical;
+		box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	&__button {
+		min-width: min-content;
+		padding: s.space(2);
+		border-radius: s.space(1);
+		background-color: s.color(primary);
+		text-align: center;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.focus {
+	&:focus {
+		outline: none;
+		border-color: #007bff; 
+		box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	}
+}

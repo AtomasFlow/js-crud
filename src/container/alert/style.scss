@@ -1,0 +1,33 @@
+@use '../../lib/service.scss' as s;
+.alert {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: s.space(4);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+	border-radius: s.space(3);
+	margin: s.space(4);
+
+	&__top {
+		display: grid;
+		gap: s.space(3);
+	}
+
+	&__title {
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	a {
+		text-decoration: none;
+		padding: s.space(3);
+		border-radius: s.space(1);
+		background-color: s.color(primary);
+		text-align: center;
+		color: inherit;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
