@@ -1,7 +1,30 @@
+// color
 $colorMap: (
 	light: #ddd,
+	gray: gray,
+	primary: rgb(13, 110, 253),
+  // secondary: ,
+	// accent: ,
+  // medium: ,
 );
 
 @function color ($key) {
 	@return map-get($colorMap, $key);
-}
+};
+
+
+// fontSizes
+$fontSizes: (
+	x-small: 10px,
+  small: 12px,
+	medium: 14px ,
+  normal: 16px,
+  large: 20px,
+  heading: 24px,
+	subheading: 28px,
+	large-heading: 30px
+);
+
+@function fonts($key) {
+	@return map-get($fontSizes, $key)
+};
