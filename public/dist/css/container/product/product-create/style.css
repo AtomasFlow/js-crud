@@ -1,0 +1,85 @@
+.block-form {
+  display: grid;
+  gap: 40px;
+  margin: 16px;
+}
+.block-form h1 {
+  color: rgb(13, 110, 253);
+  font-size: 28px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+.form__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.form__content {
+  display: grid;
+  gap: 16px;
+}
+.form__field {
+  display: grid;
+  gap: 16px;
+}
+.form__field div:not(:last-child) {
+  margin-right: 12px;
+}
+.form__field-top {
+  display: flex;
+}
+.form__field-top div {
+  display: grid;
+  gap: 4px;
+}
+.form__field-button {
+  display: grid;
+  gap: 4px;
+}
+.form__input {
+  display: grid;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+.form__input:hover {
+  opacity: 0.7;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.4);
+}
+.form__label-description {
+  font-size: 10px;
+  color: gray;
+}
+.form__textarea {
+  width: 100%;
+  min-height: 40px;
+  max-height: auto;
+  padding: 8px;
+  border-radius: 4px;
+  resize: vertical;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+.form__button {
+  min-width: min-content;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgb(13, 110, 253);
+  text-align: center;
+}
+.form__button:hover {
+  opacity: 0.8;
+}
+
+.focus:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 16px;
+}
+.alert__top {
+  display: grid;
+  gap: 12px;
+}
+.alert__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.alert a {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: rgb(13, 110, 253);
+  text-align: center;
+  color: inherit;
+}
+.alert a:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=style.css.map */

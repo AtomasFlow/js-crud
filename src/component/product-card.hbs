@@ -1,0 +1,16 @@
+
+<div class="product__card-block">
+	{{#each data.products}}
+	<div class="product__card">
+		<div class="product__content">
+			<h2 class="product__title">{{title}}</h2>
+			<p class="product__description">{{description}}</p>
+			<p class="product__id">ID: {{id}}</p>
+			<div class="product__price">
+				<p class="product__info">${{price}}</p>
+				<a class="product__edit-link" href="/product-edit?id={{id}}">Редагувати</a>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+</div>

@@ -1,0 +1,32 @@
+
+<div class="edit__card">
+	<h2 class="edit__title">Інформація про товар</h2>
+
+	<div class="edit__card-top">
+		<div class="edit__card-top-block">
+			<label class="edit__card-label" for="name">Назва товара</label>
+			<input class="edit__card-input focus" name="name" type="text" value="{{data.product.name}}">
+		</div>
+
+		<div class="edit__card-top-block">
+			<label class="edit__card-label" for="price">Ціна</label>
+			<input class="edit__card-input focus" name="price" type="number" value="{{data.product.price}}">
+		</div>
+
+		<div class="edit__card-top-block">
+			<label class="edit__card-label" for="id">ID</label>
+			<input class="edit__card-input focus" name="id" type="number" value="{{data.product.id}}">
+		</div>
+	</div>
+
+	<div class="edit__card-description">
+		<label class="edit__card-label" for="description" >Короткий опис товару</label>
+		<textarea class="edit__card-textarea focus" name="description">{{data.product.description}}</textarea>
+		<p class="edit__card-description-note">Відображаеться у картці товару</p>
+	</div>
+
+	<div class="edit__card-button">
+		<button class="edit__card-link-primary">Зберегти оновлення</button>
+		<a class="edit__card-link-red" href="/product-delete?id={{data.product.id}}">Видалити товар</a>
+	</div>
+</div>
