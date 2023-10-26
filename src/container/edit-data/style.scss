@@ -1,0 +1,51 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/field-info/style.scss' as field-info;
+@use '../../component/field/style.scss' as field;
+@use '../../container/info-order/style.scss' as info-order;
+
+.form {
+	display: grid;
+	gap: s.space(5);
+	padding: s.space(6);
+	border-radius: s.space(3);
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);	
+
+
+	&__edit-block {
+		display: flex;
+		gap: s.space(4);
+		justify-content: space-between;
+	}
+
+	&__edit-button {
+		text-decoration: none;
+		color: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: s.space(10);
+		padding: s.space(2);
+		background-color: s.color(primary);
+		border-radius: s.space(1);
+		transition: all 0.4s ease;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.space {
+	display: grid;
+	gap: s.space(5);
+	width: 100%;
+}
+
+.block-column {
+	display: grid;
+	gap: s.space(4);
+}

@@ -1,0 +1,61 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/field-info/style.scss' as field-info;
+
+
+
+.info {
+	display: grid;
+	gap: s.space(5);
+	padding: s.space(6);
+	border-radius: s.space(3);
+	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);	
+
+	&__card {
+		display: grid;
+		gap: s.space(4);
+	}
+
+	&__card-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__card-block {
+	}
+
+	&__button {
+		text-decoration: none;
+		color: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		height: s.space(10);
+		padding: s.space(2);
+		background-color: s.color(primary);
+		border-radius: s.space(1);
+		transition: all 0.4s ease;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+.field__label {
+	color:rgba(52, 58, 64, 1);
+}
+
+.heading__title {
+	color: s.color(primary);
+}
+
+.space {
+	display: grid;
+	gap: s.space(4);
+}
+

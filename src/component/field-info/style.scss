@@ -1,0 +1,13 @@
+@use '../../lib/service.scss' as s;
+
+.field {
+	display: grid;
+	gap: s.space(2);
+	
+	&__label {
+
+	}
+
+	&__value {
+	}
+}

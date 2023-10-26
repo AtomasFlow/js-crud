@@ -1,0 +1,68 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading__title {
+  font-size: 24px;
+  color: #000;
+}
+
+.heading__info {
+  font-size: 16px;
+  color: #000;
+}
+
+.product-info__divider {
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+.heading__title {
+  color: rgb(13, 110, 253);
+}
+
+.product-info__divider {
+  background-color: rgb(206, 212, 218);
+}
+
+.orders {
+  display: grid;
+  gap: 60px;
+}
+.orders__card {
+  display: grid;
+  gap: 20px;
+}
+.orders__content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(50px, 150px) 1fr 1fr 1fr;
+}
+.orders__id {
+  display: flex;
+  align-items: center;
+}
+.orders__items {
+  display: grid;
+  gap: 12px;
+}
+.orders__item {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.orders__item:hover {
+  text-decoration: underline;
+  color: #1b2963;
+  opacity: 0.8;
+}
+
+.color-gray {
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */

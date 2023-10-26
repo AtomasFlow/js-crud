@@ -1,0 +1,73 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading__title {
+  font-size: 24px;
+  color: #000;
+}
+
+.heading__info {
+  font-size: 16px;
+  color: #000;
+}
+
+.product-info__divider {
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+.info {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.info__card {
+  display: grid;
+  gap: 16px;
+}
+.info__card-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.info__button {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  background-color: rgb(13, 110, 253);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+.info__button:hover {
+  opacity: 0.8;
+}
+
+.field__label {
+  color: rgb(52, 58, 64);
+}
+
+.heading__title {
+  color: rgb(13, 110, 253);
+}
+
+.space {
+  display: grid;
+  gap: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

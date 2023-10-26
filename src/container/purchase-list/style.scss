@@ -1,0 +1,60 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/divider/style.scss' as divider;
+
+
+.heading__title {
+ color: s.color(primary);
+}
+
+.product-info__divider {
+	background-color: rgba(206, 212, 218, 1);
+}
+
+.orders {
+	display: grid;
+	gap: s.space(15);
+
+	&__card {
+		display: grid;
+		gap: s.space(5);
+	}
+
+	&__content {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: minmax(50px, 150px) 1fr 1fr 1fr;
+	}
+
+	&__id {
+		display: flex;
+		align-items: center;
+	}
+
+	&__items {
+		display: grid;
+		gap: s.space(3);
+	}
+
+	&__items-title {
+		
+	}
+
+	&__item {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		transition: all 0.4s ease;
+
+		&:hover {
+			text-decoration: underline;
+			color: #1b2963;
+			opacity: 0.8;
+		}
+	}
+}
+
+.color-gray {
+	color: s.color(gray);
+}
