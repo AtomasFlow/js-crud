@@ -5,17 +5,20 @@
   padding: 16px;
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  margin: 16px;
 }
 .card__header {
   display: grid;
   gap: 12px;
 }
 .card__title {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
 }
-.card a {
+.card__subtitle {
+  font-size: 16px;
+  color: gray;
+}
+.card__button {
   text-decoration: none;
   padding: 12px;
   border-radius: 4px;
@@ -23,7 +26,7 @@
   text-align: center;
   color: inherit;
 }
-.card a:hover {
+.card__button:hover {
   opacity: 0.8;
 }
 

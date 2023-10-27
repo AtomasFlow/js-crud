@@ -1,0 +1,43 @@
+
+<main class="main">
+	{{#with data}}
+	<form class="form-card" method="POST" action="/purchase-submit?id={{id}}">
+		{{> heading/index title="Ваше замовелення"}}
+
+		<ul class="card">
+			{{#each cart}}
+			<li class="card__item">
+				<span>{{text}}</span>
+				<span>{{price}}грн</span>
+			</li>
+			{{/each}}
+		</ul>
+
+		{{> divider/index}}
+
+		{{> heading/index title="Оформлення замовлення"}}
+
+		{{> field/index label="Ім'я" name="firstname"}}
+		{{> field/index label="Прізвище" name="lastname"}}
+		{{> field/index label="Телефон" name="phone"}}
+		{{> field/index label="Пошта" name="email"}}
+		{{> field/index label="Коментар" name="comment"}}
+		{{> field/index label="Списати бонуси" name="bonus"}}
+		{{> field/index label="Промо-код" name="promocode"}}
+
+		{{> divider/index}}
+
+		{{> field/index value=totalPrice name="totalPrice" disabled=true}}
+		{{> field/index value=productPrice name="productPrice" disabled=true}}
+		{{> field/index value=deliveryPrice name="deliveryPrice" disabled=true}}
+		{{> field/index value=amount name="amount" disabled=true}}
+
+		<strong class="form-card__total">
+			Всього: {{totalPrice}}грн ({{bonus}}грн бонусів)
+		</strong>
+
+		{{> button/index text="Оформити замовлення"}}
+	
+	</form>
+	{{/with}}
+</main>

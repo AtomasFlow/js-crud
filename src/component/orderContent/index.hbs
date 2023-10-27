@@ -1,0 +1,28 @@
+{{#each data.list}}
+
+	<div class="orders__content">
+		<div class="orders__id color-gray">
+				ID: {{this.id}}
+		</div>
+
+		<div class="orders__items link">
+				<p class="orders__items-title color-gray">Товари</p>
+				<a class="orders__item" href="/info-order?id={{id}}">{{this.title}}</a>
+		</div>
+
+		<div class="orders__items">
+				<p class="orders__items-title color-gray">Сума замовлення</p>
+				<p class="orders__items-amount">{{this.totalPrice}}</p>
+		</div>
+
+		<div class="orders__items">
+				<p class="orders__items-title color-gray">Нараховані бонуси</p>
+				<p class="orders__items-bonuses">{{this.bonus}}</p>
+		</div>
+	</div>
+
+{{#unless @last}}
+{{> divider/index}}
+{{/unless}}
+
+{{/each }}

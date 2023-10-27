@@ -1,0 +1,26 @@
+
+<div class="form"> 
+	
+	{{> heading/index title="Зміна данних"}}
+
+	{{#with data.list}}
+	
+	<form class="block-column" method="post" action="/update-data?id={{id}}">
+		{{> field-info/index label="ID:" value=id}}
+		<div class="form__edit-block">
+		
+			<div class="space">
+				{{> field/index label="Прізвище:" value=lastname name="lastname"}}
+				{{> field/index label="Пошта:" value=email name="email"}}
+			</div>
+
+			<div class="space">
+				{{> field/index label="Ім'я:" value=firstname name="firstname"}}
+				{{> field/index label="Телефон:" value=phone name="phone"}}
+			</div>
+		</div>
+		<button class="form__edit-button">Зберегти зміни</button>
+	</form>
+
+	{{/with}}
+</div>

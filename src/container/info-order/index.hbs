@@ -1,0 +1,55 @@
+{{#with data.list}}
+<form method="post" action="/edit-data?id={{id}}">
+	<div class="info">
+		
+		{{> heading/index title = "Інформація про замовлення"}}
+		
+		<div class="info__card">
+
+			<div class="info__card-block space">
+				{{> field-info/index label="ID:" value=id }}
+			</div>
+
+			{{> divider/index}}
+
+			<div class="info__card-flex">
+				<div class="space">
+					{{> field-info/index label="Ім'я:" value=firstname name=firstname}}
+					{{> field-info/index label="Телефон:" value=phone name=phone}}
+				</div>
+
+				<div class="space">
+					{{> field-info/index label="Прізвище:" value=lastname name=lastname}}
+					{{> field-info/index label="Пошта:" value=email name=email}}
+				</div>
+			</div>
+
+			{{> divider/index}}
+
+			<div class="info__card-block space">
+			{{> field/index label="Назва товару:" value=title}}
+			{{> field/index label="Коментар:" value=comment}}
+			</div>
+
+			{{> divider/index}}
+
+			<div class="info__card-flex">
+				<div class="space">
+					{{> field/index label="Вартість товарів:" value=totalPrice}}
+					{{> field/index label="Сума до сплати:" value=totalPrice}}
+				</div>
+
+				<div class="space">
+					{{> field/index label="Вартість доставки:" value=deliveryPrice}}
+					{{> field/index label="Нараховані бонуси:" value=bonus}}
+				</div>
+			</div>
+
+		</div>
+
+		{{> divider/index}}
+		<button  class="info__button">Змінити дані</button>
+
+	</div>
+</form>
+{{/with}}
